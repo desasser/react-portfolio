@@ -1,45 +1,70 @@
-// class Demo extends React.Component{
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       show: false
-//     };
-//     this.close = this.close.bind(this);
-//     this.toggleDrawer = this.toggleDrawer.bind(this);
-//   }
-//   close() {
-//     this.setState({
-//       show: false
-//     });
-//   }
-//   toggleDrawer() {
-//     this.setState({ show: true });
-//   }
-//   render() {
-//     return (
-//       <div>
-//         <ButtonToolbar>
-//           <Button onClick={this.toggleDrawer}>Open</Button>
-//         </ButtonToolbar>
-//         <Drawer
-//           show={this.state.show}
-//           onHide={this.close}
-//         >
-//           <Drawer.Header>
-//             <Drawer.Title>Drawer Title</Drawer.Title>
-//           </Drawer.Header>
-//           <Drawer.Body>
-//             <Paragraph />
-//           </Drawer.Body>
-//           <Drawer.Footer>
-//             <Button onClick={this.close} appearance="primary">Confirm</Button>
-//             <Button onClick={this.close} appearance="subtle">Cancel</Button>
-//           </Drawer.Footer>
-//         </Drawer>
-//       </div>
-//     );
-//   }
+import React from 'react';
+import clsx from 'clsx';
+import { makeStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import Button from '@material-ui/core/Button';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import pfp from '../../assets/me.jpg';
 
-// }
 
-// ReactDOM.render(<Demo />);
+const useStyles = makeStyles({
+  list: {
+    width: 350,
+  },
+  fullList: {
+    width: 'auto',
+  },
+});
+
+export default function TemporaryDrawer() {
+  const classes = useStyles();
+  const [state, setState] = React.useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <div
+      className={clsx(classes.list, {
+        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+      })}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <img src={pfp} />
+      <List>
+        {['Home', 'Projects', 'About', 'Contact'].map((text, index) => (
+          <ListItem button key={text}>
+            <ListItemText primary={text} />
+          </ListItem>
+        ))}
+      </List>
+    </div>
+  );
+
+  return (
+    <div>
+      {['left'].map((anchor) => (
+        <React.Fragment key={anchor}>
+          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
+            {list(anchor)}
+          </Drawer>
+        </React.Fragment>
+      ))}
+    </div>
+  );
+}
