@@ -2,8 +2,6 @@ import React from 'react'
 
 export default function index() {
   return (
-    <div>
-      
-    </div>
+    <h1>Project 1</h1>
   )
 }
