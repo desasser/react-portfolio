@@ -1,17 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './style.css';
 
 export default function ProjectTech() {
   return (
     <div>
-      <p>
-        Technologies Used
+      <p className="project-tech-text">
+        Technologies Used: React, CSS, Javascript, HTML5
       </p>
-      <ul style={{columns:'2'}}>
-        <li>React</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>HTML5</li>
-      </ul>
     </div>
   )
 }

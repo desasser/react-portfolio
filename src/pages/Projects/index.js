@@ -6,12 +6,12 @@ import './style.css';
 
 export default function Projects() {
   return (
-    <div>
+    <main className="project-landing-page">
       <Sidebar />
       <ProjectCard />
       <ProjectCard />
       <ProjectCard />
       <IconSet />
-    </div>
+    </main>
   )
 }
