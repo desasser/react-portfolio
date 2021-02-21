@@ -9,6 +9,8 @@ export default function Projects() {
     <div>
       <Sidebar />
       <ProjectCard />
+      <ProjectCard />
+      <ProjectCard />
       <IconSet />
     </div>
   )

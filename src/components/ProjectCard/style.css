@@ -1,0 +1,9 @@
+.project-card-wrapper {
+  border: 1px black solid;
+  /* height: 200px; */
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 0.5em;
+  box-shadow: 2px 5px 10px 3px #888888;
+  cursor: pointer;
+}

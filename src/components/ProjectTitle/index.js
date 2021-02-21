@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import "./style.css"
 
 export default function ProjectTitle() {
   return (
-    <h1>Project 1</h1>
+    <p className="project-title">Project 1</p>
   )
 }

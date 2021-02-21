@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './style.css';
 
 export default function ProjectTextContent() {
   return (
     <div>
-      <p>Synopsis of project 1</p>
+      <p className="project-text-content">Synopsis of project 1</p>
     </div>
   )
 }
