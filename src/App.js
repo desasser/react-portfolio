@@ -1,6 +1,8 @@
 import React from "react";
 import Home from './pages/Home';
 // import styled, { css } from 'styled-components';
+// import Sidebar from '../../components/Sidebar';
+// import IconSet from '../../components/IconSet';
 import './index.css';
 
 // const StyledIconSet = styled(IconSet)`
@@ -11,6 +13,7 @@ import './index.css';
 function App() {
   return (
     <div>
+      {/* <Sidebar /> */}
       <Home />
       {/* <StyledIconSet /> */}
     </div>
