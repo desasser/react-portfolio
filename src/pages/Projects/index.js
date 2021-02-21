@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Sidebar from '../../components/Sidebar';
+import IconSet from '../../components/IconSet';
+import ProjectCard from '../../components/ProjectCard';
+import './style.css';
 
-export default function index() {
+export default function Projects() {
   return (
     <div>
-      
+      <Sidebar />
+      <ProjectCard />
+      <IconSet />
     </div>
   )
 }

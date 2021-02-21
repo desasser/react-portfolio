@@ -1,5 +1,6 @@
 import React from "react";
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 // import styled, { css } from 'styled-components';
 // import Sidebar from '../../components/Sidebar';
 // import IconSet from '../../components/IconSet';
@@ -14,7 +15,8 @@ function App() {
   return (
     <div>
       {/* <Sidebar /> */}
-      <Home />
+      {/* <Home /> */}
+      <Projects />
       {/* <StyledIconSet /> */}
     </div>
   );

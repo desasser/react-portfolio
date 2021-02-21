@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function index() {
+export default function ProjectTextContent() {
   return (
     <div>
       <p>Synopsis of project 1</p>
