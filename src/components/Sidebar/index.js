@@ -6,8 +6,9 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import pfp from '../../assets/me.jpg';
-
+import myPic from '../../assets/me.jpg';
+import './style.css';
+import IconSet from '../IconSet';
 
 const useStyles = makeStyles({
   list: {
@@ -44,24 +45,25 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <img src={pfp} />
-      <List>
+      <img src={myPic} className="sidebar-image"/>
+      <List className="sidebar-list">
         {['Home', 'Projects', 'About', 'Contact'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemText primary={text} />
+            <ListItemText primary={text} className="sidebar-text" />
           </ListItem>
         ))}
       </List>
     </div>
   );
-
+ 
   return (
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button onClick={toggleDrawer(anchor, true)} className="sidebar-open">Nav</Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
+            {/* <IconSet /> */}
           </Drawer>
         </React.Fragment>
       ))}

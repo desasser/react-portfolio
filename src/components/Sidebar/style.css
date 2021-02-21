@@ -1,0 +1,30 @@
+.sidebar-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+.sidebar-list {
+  position: relative;
+  top: 150px;
+}
+
+.sidebar-text {
+  text-align: center;
+  font-size: 24px;
+}
+
+.sidebar-text span {
+  font-size: 24px;
+}
+
+.sidebar-open {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  background-color: #607d8b !important;
+}

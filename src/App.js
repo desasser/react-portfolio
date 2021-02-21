@@ -1,13 +1,19 @@
 import React from "react";
-import Sidebar from './components/Sidebar';
+import Home from './pages/Home';
+// import styled, { css } from 'styled-components';
+import './index.css';
+
+// const StyledIconSet = styled(IconSet)`
+//   color:pink;
+//   font-size:10em;
+// `
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
-      <Sidebar />
+      <Home />
+      {/* <StyledIconSet /> */}
     </div>
-
   );
 }
 

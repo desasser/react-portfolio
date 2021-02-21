@@ -1,0 +1,25 @@
+.github-icon {
+  position: relative;
+  left: 20px;
+}
+
+.linkedin-icon {
+  position: relative;
+  left: 40px;
+}
+
+.instagram-icon {
+  position: relative;
+  left:60px;
+}
+
+.fab {
+  font-size: 3em;
+  color: #607d8b;
+}
+
+.icon-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 90px;
+}
