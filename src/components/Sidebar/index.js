@@ -9,7 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import myPic from '../../assets/me.jpg';
 import './style.css';
 import IconSet from '../IconSet';
-import styled, { css } from 'styled-components';
+// import styled, { css } from 'styled-components';
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -33,14 +33,6 @@ export default function TemporaryDrawer() {
     right: false,
   });
 
-  const StyledIconSet = styled(IconSet)`
-  color:pink;
-  font-size:3em;
-  position:relative !important;
-  bottom: 200px;
-  left: 40px;
-  `;
-
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
@@ -62,7 +54,7 @@ export default function TemporaryDrawer() {
         <img src={myPic} className="sidebar-image" />
       </Link>
       <ListItem>
-        <ListItemText primary='Daniel' className="sidebar-name"/>
+        <ListItemText primary='Daniel' className="sidebar-name" />
       </ListItem>
       <List className="sidebar-list">
         {['Home', 'Projects', 'Contact'].map((text, index) => (
@@ -72,19 +64,20 @@ export default function TemporaryDrawer() {
             </ListItem>
           </Link>
         ))}
-        {/* <StyledIconSet /> */}
       </List>
     </div>
   );
 
   return (
-    <div>
+    <div className="sidebar-position">
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)} className="sidebar-open">Explore</Button>
+          <Button onClick={toggleDrawer(anchor, true)} className="sidebar-button">Explore</Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)} classes={{ paper: classes.paper }}>
             {list(anchor)}
-            <StyledIconSet />
+            <div className="sidebar-footer">
+              <IconSet />
+            </div>
           </Drawer>
         </React.Fragment>
       ))}

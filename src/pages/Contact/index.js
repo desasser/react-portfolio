@@ -16,7 +16,9 @@ export default function Contact() {
   return (
     <div>
       <Sidebar />
-      <IconSet />
+      <div className="main-iconset">
+          <IconSet />
+        </div>
       <div className="contact-wrapper">
         <p className="contact-header">Contact</p>
         <div className="contact-summary-text">

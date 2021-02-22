@@ -41,3 +41,13 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #888;
 }
+
+.main-iconset {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.main-iconset a:hover .fab {
+  color: #ffbd45;
+}

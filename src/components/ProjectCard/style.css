@@ -31,7 +31,7 @@
 }
 
 .project-card-slide-40:hover {
-  /* margin-left: 40px; */
+  transform: translateX(40px);
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 

@@ -1,18 +1,3 @@
-.github-icon {
-  position: relative;
-  left: 20px;
-}
-
-.linkedin-icon {
-  position: relative;
-  left: 40px;
-}
-
-.instagram-icon {
-  position: relative;
-  left:60px;
-}
-
 .fab {
   font-size: 3em;
   color: #c25e00;
@@ -23,10 +8,8 @@
   transition: all 1s ease;
 }
 
-.icon-wrapper {
-  position: fixed;
-  bottom: 20px;
-  right: 90px;
+.icon-wrapper > a {
+  margin: 10px;
 }
 
 .github-icon:hover .fab {

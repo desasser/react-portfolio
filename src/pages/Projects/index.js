@@ -26,7 +26,9 @@ export default function Projects() {
       <Sidebar />
       <div className="project-cards-wrapper">
         {projArr.map(project => <ProjectCard key={project.title} details={project} />)}
-        <IconSet />
+        <div className="main-iconset">
+          <IconSet />
+        </div>
       </div>
     </main>
   )

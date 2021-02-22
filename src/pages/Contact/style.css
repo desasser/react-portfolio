@@ -43,6 +43,6 @@
 }
 
 .contact-slide-20:hover {
-  margin-left: 20px;
+  transform: translateX(20px);
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
 }
