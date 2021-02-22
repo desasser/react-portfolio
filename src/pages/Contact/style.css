@@ -21,3 +21,16 @@
   color: #fb8c00;
   text-decoration: none;
 }
+
+.contact-email-label {
+  cursor: pointer;
+}
+.contact-email-label:after {
+  content:"desasser79@gmail.com";
+}
+.contact-email-label:hover:after {
+  content:"copy to clipboard";
+}
+.contact-email-label:hover:active:after {
+  content:"email copied";
+}

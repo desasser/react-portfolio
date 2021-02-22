@@ -76,7 +76,7 @@ export default function TemporaryDrawer() {
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)} className="sidebar-open">Nav</Button>
+          <Button onClick={toggleDrawer(anchor, true)} className="sidebar-open">Explore</Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)} classes={{paper: classes.paper}}>
             {list(anchor)}
           <StyledIconSet />

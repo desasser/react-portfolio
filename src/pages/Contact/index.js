@@ -4,6 +4,8 @@ import IconSet from '../../components/IconSet';
 import './style.css';
 
 export default function Contact() {
+
+
   return (
     <div>
       <Sidebar />
@@ -14,7 +16,7 @@ export default function Contact() {
           <p>I am actively seeking out opportunities to collaborate with companies, individuals, and agencies. I work best with a team of collaborators who can share their collective expertise towards a mutual goal. </p>
           <p> Let me know if that sounds like a good fit for your project, shoot me a message and let's get in touch!</p>
         </div>
-          <p className="contact-text">email: desasser79@gmail.com</p>
+          <a className="contact-text contact-email-label copy-email" ></a>
           <p className="contact-text"><a href="https://github.com/" target="blank" className="contact-text"> github</a>
           </p>
           <p className="contact-text"><a href="https://www.linkedin.com/in/dsasser79/" target="blank" className="contact-text"> linkedin</a>
