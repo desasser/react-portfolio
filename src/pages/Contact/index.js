@@ -5,7 +5,7 @@ import './style.css';
 
 export default function Contact() {
   return (
-    <div className="contact-landing-page">
+    <div>
       <Sidebar />
       <IconSet />
       <div className="contact-wrapper">

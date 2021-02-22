@@ -22,7 +22,7 @@ export default function Projects() {
   }]
 
   return (
-    <main className="project-landing-page">
+    <main>
       <Sidebar />
       <div className="project-cards-wrapper">
         {projArr.map(project => <ProjectCard key={project.title} details={project} />)}
