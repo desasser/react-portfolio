@@ -5,9 +5,14 @@ import './style.css';
 
 export default function index() {
   return (
-    <main className ="main-image responsive-img">
+    <main className="main-image responsive-img">
       <Sidebar />
       <IconSet />
-  </main>
+      <div className="home-welcome-wrapper">
+        <span className="home-hello">Hello.</span>
+        <br/>
+        <span className="home-greeting">Nice to meet you, I'm Daniel.</span>
+      </div>
+    </main>
   )
 }

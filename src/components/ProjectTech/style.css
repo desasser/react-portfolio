@@ -5,3 +5,13 @@
   left: 20%;
   color: #aebfbe;
 }
+
+.project-tech-fade-in {
+  opacity: 0;
+}
+
+.project-tech-fade-in:hover {
+  opacity: 1;
+  /* margin-right: 20px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1); */
+}

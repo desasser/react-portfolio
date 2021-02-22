@@ -14,6 +14,7 @@
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px; */
+  animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 /* 
 .project-title {
@@ -23,3 +24,27 @@
 .project-tech {
   grid-area: 1 / 2 / 2 / 3;
 } */
+
+.project-card-slide-40 {
+  transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+  pointer-events: none;
+}
+
+.project-card-slide-40:hover {
+  /* margin-left: 40px; */
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.project-card-slide-40 > * {
+  pointer-events: auto;
+  transition: 600ms opacity, 600ms transform;
+}
+
+.project-card-slide-40:hover > * {
+  opacity: 0.4;
+}
+
+.project-card-slide-40:hover > *:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}

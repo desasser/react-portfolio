@@ -6,3 +6,23 @@
   height: 100vh;
   position: relative;
 }
+
+.home-welcome-wrapper {
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+}
+
+.home-hello {
+  font-size: 40px;
+  color: #34515f;
+  font-weight: bold;
+}
+
+.home-greeting {
+  color: #c25e00;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  left: 40px;
+}

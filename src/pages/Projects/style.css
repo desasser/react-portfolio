@@ -5,7 +5,8 @@
 
 .project-cards-wrapper {
   width: 80%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 120px;
   position: relative;
   top: 100px;
 }
