@@ -61,8 +61,8 @@ export default function TemporaryDrawer() {
       <img src={myPic} className="sidebar-image" />
       <List className="sidebar-list">
         {['Home', 'Projects', 'Contact'].map((text, index) => (
-          <Link to={"/" + text } style={{ textDecoration: 'none' }} >
-            <ListItem button key={text}>
+          <Link key={text} to={"/" + text } style={{ textDecoration: 'none' }} >
+            <ListItem button >
               <ListItemText primary={text} className="sidebar-text" />
             </ListItem>
           </Link>

@@ -24,13 +24,24 @@
 
 .contact-email-label {
   cursor: pointer;
+  background-color: #34515f;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 .contact-email-label:after {
   content:"desasser79@gmail.com";
 }
+
 .contact-email-label:hover:after {
   content:"copy to clipboard";
 }
+
 .contact-email-label:hover:active:after {
-  content:"email copied";
+  content:"copied";
+}
+
+.contact-slide-20:hover {
+  margin-left: 20px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
 }
