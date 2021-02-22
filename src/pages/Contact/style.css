@@ -29,6 +29,7 @@
   margin: 0;
   padding: 0;
 }
+
 .contact-email-label:after {
   content:"desasser79@gmail.com";
 }

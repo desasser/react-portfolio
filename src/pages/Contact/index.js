@@ -21,7 +21,7 @@ export default function Contact() {
         <p className="contact-header">Contact</p>
         <div className="contact-summary-text">
           <p>I am actively seeking out opportunities to collaborate with companies, individuals, and agencies. I work best with a team of collaborators who can share their collective expertise towards a mutual goal. </p>
-          <p> Let me know if that sounds like a good fit for your project, shoot me a message and let's get in touch!</p>
+          <p> If that sounds like a good fit for your project, shoot me a message and let's chat!</p>
         </div>
           <span className="contact-text contact-email-label copy-email contact-slide-20"  value="desasser79@gmail.com" onClick={navigator.clipboard.writeText('desasser79@gmail.com')}></span>
           {/* onClick={copyToClipboard} ref={myRef} */}

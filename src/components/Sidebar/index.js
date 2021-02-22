@@ -58,10 +58,15 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <img src={myPic} className="sidebar-image" />
+      <Link to="/home" style={{ textDecoration: 'none' }}>
+        <img src={myPic} className="sidebar-image" />
+      </Link>
+      <ListItem>
+        <ListItemText primary='Daniel' className="sidebar-name"/>
+      </ListItem>
       <List className="sidebar-list">
         {['Home', 'Projects', 'Contact'].map((text, index) => (
-          <Link key={text} to={"/" + text } style={{ textDecoration: 'none' }} >
+          <Link key={text} to={"/" + text} style={{ textDecoration: 'none' }} >
             <ListItem button >
               <ListItemText primary={text} className="sidebar-text" />
             </ListItem>
@@ -77,9 +82,9 @@ export default function TemporaryDrawer() {
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)} className="sidebar-open">Explore</Button>
-          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)} classes={{paper: classes.paper}}>
+          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)} classes={{ paper: classes.paper }}>
             {list(anchor)}
-          <StyledIconSet />
+            <StyledIconSet />
           </Drawer>
         </React.Fragment>
       ))}
