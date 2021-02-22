@@ -2,3 +2,10 @@
   background-color: #34515f;
   height: 100vh;
 }
+
+.project-cards-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}

@@ -1,12 +1,16 @@
 .project-title {
   margin: 0;
-  color: black;
+  color: #e0f2f1;
   font-weight: bold;
   font-size: 7em;
 }
 
 .project-title-synopsis {
   margin: 10px 0 0 40px;
-  color: black;
-  font-size: 1.5em;
+  color: #fb8c00;
+  font-size: 18px;
+}
+
+.project-title-wrapper {
+  width: 60%;
 }

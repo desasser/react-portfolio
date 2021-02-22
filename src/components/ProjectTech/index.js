@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css';
 
-export default function ProjectTech() {
+export default function ProjectTech({tech}) {
   return (
-    <div>
+    // <div>
       <p className="project-tech-text">
-        Technologies Used: React, CSS, Javascript, HTML5
+        Technologies Used: {tech}
       </p>
-    </div>
+    // </div>
   )
 }

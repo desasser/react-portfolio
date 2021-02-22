@@ -1,0 +1,28 @@
+.contact-landing-page {
+  background-color: #34515f;
+  height: 100vh;
+}
+
+.contact-wrapper {
+  width: 80%;
+  margin-left: 240px;
+  margin-top: 120px;
+}
+
+.contact-summary-text {
+  width: 60%;
+  color: #e0f2f1;
+  font-size: 20px;
+}
+
+.contact-header {
+  font-size: 50px;
+  font-weight: bold;
+  color: #e0f2f1;
+}
+
+.contact-text {
+  font-size: 20px;
+  color: #fb8c00;
+  text-decoration: none;
+}

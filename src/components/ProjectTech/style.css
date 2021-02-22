@@ -1,6 +1,7 @@
 .project-tech-text {
   text-align: right;
-  width: 40%;
+  width: 20%;
   position: relative;
-  right: -150px;
+  left: 20%;
+  color: #aebfbe;
 }

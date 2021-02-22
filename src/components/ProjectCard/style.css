@@ -1,12 +1,25 @@
 .project-card-wrapper {
   /* border: 1px black solid; */
   /* height: 200px; */
-  width: 80%;
+  /* width: 80%; */
   margin: 50px auto;
   /* border-radius: 0.5em; */
   /* box-shadow: 2px 5px 10px 3px #888888; */
   cursor: pointer;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; */
 }
+/* 
+.project-title {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.project-tech {
+  grid-area: 1 / 2 / 2 / 3;
+} */

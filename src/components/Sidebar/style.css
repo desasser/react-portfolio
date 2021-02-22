@@ -20,11 +20,12 @@
 
 .sidebar-text span {
   font-size: 24px;
+  color: black;
 }
 
 .sidebar-open {
   position: fixed;
   top: 20px;
   left: 30px;
-  background-color: #607d8b !important;
+  background-color: #c25e00 !important;
 }
