@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../../components/Sidebar';
 import ProjectHeader from '../../components/ProjectHeader';
 import IconSet from '../../components/IconSet';
+import ProjectTextContent from '../../components/ProjectTextContent';
 import './style.css';
 
 export default function Dungen() {
@@ -10,6 +11,7 @@ export default function Dungen() {
     <main>
       <Sidebar />
       <ProjectHeader title="DunGen"/>
+      <ProjectTextContent />
       <div className="main-iconset">
         <IconSet />
       </div>

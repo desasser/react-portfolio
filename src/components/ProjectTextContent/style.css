@@ -1,0 +1,23 @@
+.project-text-content-links {
+  text-decoration: none;
+  color: #ffbd45;
+}
+
+.project-text-content-list {
+  color:#ffbd45;
+}
+
+.project-text-content-ul {
+  position:relative;
+  top: 10em;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.project-text-content-under-construction {
+  position:relative;
+  color:#ffbd45;
+  top: 7em;
+  width: 40%;
+  margin: 0 auto;
+}
