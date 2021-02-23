@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from '../../components/Sidebar';
 import IconSet from '../../components/IconSet';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../../components/ProjectCard';
 import './style.css';
 
@@ -40,7 +41,11 @@ export default function Projects() {
     <main>
       <Sidebar />
       <div className="project-cards-wrapper">
-        {projArr.map(project => <ProjectCard key={project.title} details={project} />)}
+        {projArr.map(project => (
+          <Link key={project.title} to={"/" + project.title} style={{ textDecoration: 'none' }} >
+            <ProjectCard key={project.title} details={project} />
+          </Link>
+        ))}
         <div className="main-iconset">
           <IconSet />
         </div>

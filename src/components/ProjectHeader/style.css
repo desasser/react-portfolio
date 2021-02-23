@@ -1,0 +1,13 @@
+.project-header-title {
+  margin: 0;
+  color: #e0f2f1;
+  font-weight: bold;
+  font-size: 7em;
+  text-align: center;
+}
+
+.project-header-wrapper {
+  width: 100vw;
+  position: relative;
+  top: 6rem;
+}
