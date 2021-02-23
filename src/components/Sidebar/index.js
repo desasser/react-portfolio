@@ -50,12 +50,12 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      <img src={myPic} className="sidebar-image" />
       <Link to="/home" style={{ textDecoration: 'none' }}>
-        <img src={myPic} className="sidebar-image" />
+        <ListItem>
+          <ListItemText primary='Daniel' className="sidebar-name" />
+        </ListItem>
       </Link>
-      <ListItem>
-        <ListItemText primary='Daniel' className="sidebar-name" />
-      </ListItem>
       <List className="sidebar-list">
         {['Home', 'Projects', 'Contact'].map((text, index) => (
           <Link key={text} to={"/" + text} style={{ textDecoration: 'none' }} >
