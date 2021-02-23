@@ -14,7 +14,7 @@ export default function Contact() {
   // };
 
   return (
-    <div>
+    <main>
       <Sidebar />
       <div className="main-iconset">
           <IconSet />
@@ -36,6 +36,6 @@ export default function Contact() {
           <p><a href="https://drive.google.com/file/d/18fXVmHSaL_0SmbzJARYXzKFlq2hk6zGm/view?usp=sharing" target="blank" className="contact-text contact-slide-20">resume</a>
           </p>
       </div>
-    </div>
+    </main>
   )
 }

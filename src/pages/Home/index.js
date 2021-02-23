@@ -5,7 +5,7 @@ import './style.css';
 
 export default function index() {
   return (
-    <main className="main-image responsive-img">
+    <main className="main-image">
       <Sidebar />
       <div className="main-iconset">
         <IconSet />
