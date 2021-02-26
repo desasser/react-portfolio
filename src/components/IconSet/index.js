@@ -4,7 +4,7 @@ import './style.css';
 export default function IconSet() {
 
   return (
-    <div className='icon-wrapper'>
+    <div className='icon-wrapper' >
       <a href="https://github.com/desasser" className="github-icon" target="_blank">
         <i className="fab fa-github"></i>
       </a>
